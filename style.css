@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap');
+
+body{
+    background-color: lightgray;
+}
+
+.principal{
+    width: 100%;
+}
+
+.cima{
+  height: 40px;
+  color: red;
+}
+
+.tabela table{
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    height: 50px  ;
+    background-color: lightgoldenrodyellow;
+}
+
+a:hover{
+    color: red;
+}
+
+.corsa{
+    width: 15%;
+}
+
+
+.corsa img{
+   width: 100%;
+}
+
+
+.gustavo{
+    justify-content: center;
+}
+
+.celta{
+    width: 15%;
+}
+
+.celta img{
+   width: 100%;
+}
+
+.chevette{
+    width: 15%;
+}
+
+.chevette img{
+    width: 100%;
+}

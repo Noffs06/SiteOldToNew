@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site 2000 para modernidade</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body id="corpo">
+    <div class="principal">
+        <div id ="paragrafos">
+            <h1>Bem-vindos ao Carstreetman:</h1>
+            <p>em um clique, você verá a magica</p>
+        </div> 
+        <input type="button" value="ATUALIZAR PARA NOVA GERAÇÃO" onclick="mudatamanhofonte()" />
+
+        <div class="tabela" id="tabelaid">
+            <table border="1">
+                
+                
+                <tr class="cima">
+                    <td>carros</td>
+                    <td>Ano</td>
+                    <td>Estado</td>
+                </tr>
+                
+                
+                <tr>
+                    <td class="corsa">
+                        Corsa
+                        <img src="img/corsa.jpg" id="corsadois">
+                    </td>
+                    <td id = "anocorsa">1997</td>
+                    <td class="gustavo">
+                        Semi-novo
+                        <p id="desccorsa">bem conservado / R$4000 </p>
+                        <a href="https://studiosol-a.akamaihd.net/tb/letras-blog/wp-content/uploads/2020/11/5c34fdd-chitaozinho-e-xororo-1024x684.jpg" target="_blank" class="link">comprar</a> <a href="https://studiosol-a.akamaihd.net/tb/letras-blog/wp-content/uploads/2020/11/5c34fdd-chitaozinho-e-xororo-1024x684.jpg" target="_blank">mais detalhes</a>
+                    </td>
+                </tr>
+                
+                
+                <tr>
+                    <td class="celta">
+                        Celta
+                        <img src="img/celta.jpg" id="celtadois">
+                    </td>
+                    <td id="anocelta">2001</td>
+                    <td>
+                        0 km 
+                        <p id="desccelta">produto novo! / R$7.500 </p>
+                        <a href="https://portalpopline.com.br/wp-content/uploads/2022/04/givaldo-mendigo.png" target="_blank">comprar</a> <a href="https://studiosol-a.akamaihd.net/tb/letras-blog/wp-content/uploads/2020/11/5c34fdd-chitaozinho-e-xororo-1024x684.jpg" target="_blank">mais detalhes</a>
+                    </td>
+                </tr>
+                
+                
+                <tr >
+                    <td class="chevette">
+                        Chevette
+                        <img src="img/chevette.jpg" id="chevettedois">
+                    </td>
+                    <td id="anochevette">1970</td>
+                    <td>
+                        Usado
+                        <p id="descchevette">Reliquia! / R$13000 </p>
+                        <a href="https://studiosol-a.akamaihd.net/tb/letras-blog/wp-content/uploads/2020/11/5c34fdd-chitaozinho-e-xororo-1024x684.jpg" target="_blank" >comprar</a>  <a href="https://studiosol-a.akamaihd.net/tb/letras-blog/wp-content/uploads/2020/11/5c34fdd-chitaozinho-e-xororo-1024x684.jpg" target="_blank">mais detalhes</a>
+                    </td>
+                </tr>
+                
+
+            </table>
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+
+
+
+
+
+
+<script>
+    function mudatamanhofonte(){
+        document.body.style.backgroundImage = "url('img/fundo.jpg')";  
+        document.getElementById("paragrafos").style.fontStyle = "italic"
+        document.getElementById("paragrafos").style.backgroundColor = "white"
+        document.getElementById("paragrafos").style.borderRadius = "15px"
+        document.getElementById("paragrafos").style.width = "80vh"
+        document.getElementById("paragrafos").style.display = "flex"
+        document.getElementById("paragrafos").style.flexDirection = "column"
+        document.getElementById("paragrafos").style.margin = "0 auto"
+        document.getElementById("paragrafos").style.textAlign = "center"
+        document.getElementById("paragrafos").style.fontFamily = "Holtwood One SC", "cursive"
+        document.getElementsByClassName("tabela")[0].style.fontFamily = "Holtwood One SC", "cursive"
+
+        var img = document.querySelector('#corsadois')
+        img.setAttribute("src" , "corsa2024.jpg")
+
+        var img = document.querySelector('#celtadois')
+        img.setAttribute("src" , "celta2024.jpg")
+
+        var img = document.querySelector('#chevettedois')
+        img.setAttribute("src" , "chevette2024.jpg")
+
+        document.getElementById("anocorsa").innerHTML = "2024"
+        document.getElementById("anocelta").innerHTML = "2024"
+        document.getElementById("anochevette").innerHTML = "2024"
+        document.getElementById("desccorsa").innerHTML = "NOVIDADE! / R$130.000"
+        document.getElementById("desccelta").innerHTML = "O MAIS NOVO / R$153.000"
+        document.getElementById("descchevette").innerHTML = "ELÉTRICO!!! / R$200.000"
+        document.querySelector("table").style.backgroundColor = "black"
+        document.querySelector("table").style.color = "white"
+        document.querySelector("a").style.textDecoration = "none"
+        
+        var x  = document.getElementsByTagName("a")
+        var i 
+        for(i = 0; i < x.length; i++){
+         x[i].style.color = "blue"
+         x[i].style.textDecoration = "none"
+         x[i].style.backgroundColor = "white"
+         x[i].style.borderRadius = "7px"
+         
+         x[i].addEventListener("mouseover", function() {
+            this.style.color = "red"; 
+            this.style.backgroundColor = "grey"; 
+        });
+    
+         x[i].addEventListener("mouseout", function() {
+         this.style.color = "blue"; 
+         this.style.backgroundColor = "white"; 
+        });
+        }
+        
+
+
+    }
+</script>
